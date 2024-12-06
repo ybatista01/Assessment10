@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="volunteers.js"></script>
+    <style>
+        /* Constrain layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .red-button {
+            background-color: #800D1E;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .red-button:hover {
+            background-color: #a00e28;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Volunteer Event</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteer.html" class="active">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Add Volunteer</h2>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="Enter first name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" placeholder="Enter last name">
+            <button id="add_button" class="red-button">Add Volunteer</button>
+        </section>
+
+        <section>
+            <h2>Delete Volunteer</h2>
+            <label for="delete_name">Full Name:</label>
+            <input type="text" id="delete_name" placeholder="Enter full name">
+            <button id="delete_button" class="red-button">Delete Volunteer</button>
+        </section>
+
+        <section>
+            <h2>Volunteer List</h2>
+            <textarea id="volunteerList" rows="10" cols="30" readonly></textarea>
+            <br>
+            <button id="sort_button" class="red-button">Sort Volunteers</button>
+            <button id="clear_button" class="red-button">Clear Volunteers</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="invitation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Volunteer Invitation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="Volunteer.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Invitation Message:</h2>
+        <p>Hello <span id="recipientNamePlaceholder">__recipientName__</span>!</p>
+        <p>You have been invited to volunteer for an event held on July 1st. Please respond to this email to sign up as a volunteer.</p>
+        <p>Thanks!<br><span id="hostNamePlaceholder">__hostName__</span></p>
+
+        <h2>Fill Out the Invitation Form:</h2>
+        <form onsubmit="replaceContent(); return false;">
+            <label for="recipientNameInput">Recipient Name:</label>
+            <input type="text" id="recipientNameInput" placeholder="Enter your Recipient Name" required>
+
+            <label for="hostNameInput">Host Name:</label>
+            <input type="text" id="hostNameInput" placeholder="Enter your Name" required>
+
+            <button type="submit">Generate Invitation</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

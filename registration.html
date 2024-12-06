@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="registration.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Register for Our Volunteer Event</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteer.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html" class="active">Registration</a></li>
+        </ul>
+    </nav>
+    <form id="registrationForm" onsubmit="validateAndSubmit(event)">
+        <label for="username">Username* (letters and numbers only)</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <span class="error" id="usernameError"></span>
+
+        <label for="password">Password* (minimum 8 characters)</label>
+        <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+        <span class="error" id="passwordError"></span>
+
+        <label for="passwordVerify">Verify Password* (must match password)</label>
+        <input type="password" id="passwordVerify" name="passwordVerify" placeholder="Must match password" required>
+        <span class="error" id="passwordVerifyError"></span>
+
+        <label for="firstName">First Name* (text only)</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+        <span class="error" id="firstNameError"></span>
+
+        <label for="lastName">Last Name* (text only)</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+        <span class="error" id="lastNameError"></span>
+
+        <label for="email">Email (e.g., example@domain.com)</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com">
+        <span class="error" id="emailError"></span>
+
+        <label for="phoneNumber">Phone Number (e.g., (123) 456-7890)</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(123) 456-7890">
+        <span class="error" id="phoneNumberError"></span>
+
+        <label>Sign Up for Newsletter:</label>
+        <input type="radio" id="newsletterYes" name="signUpNewsletter" value="Yes"> Yes
+        <input type="radio" id="newsletterNo" name="signUpNewsletter" value="No"> No
+
+        <button type="submit" style="background-color: red; color: white; border: none; padding: 10px 15px; font-size: 16px; cursor: pointer;">Submit</button>
+    </form>
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
